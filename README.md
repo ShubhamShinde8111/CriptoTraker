@@ -34,3 +34,11 @@
 ⏳ Trade History: View your transaction history and learning curve.
 
 🎯 Real-Time Price Feed: Live market data integration ensures an authentic experience.
+
+
+
+## 🌐 Backend (Node.js) Configuration
+**Install dependencies:**
+
+<pre> <code> cd node </code></pre>
+<pre> <code> npm install </code></pre>
