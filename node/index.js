@@ -18,12 +18,12 @@ app.use(express.json());
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyCryKnuLUnYVndI2pgLZ_jbm1hJ13LGniE",
-  authDomain: "login-bed12.firebaseapp.com",
-  projectId: "login-bed12",
-  storageBucket: "login-bed12.appspot.com",
-  messagingSenderId: "1013925473235",
-  appId: "1:1013925473235:web:ff8731b2da96b8bbd4dd26"
+  apiKey: "Youre_Firebase_Api",
+  authDomain: "Youre_Firebase_authDomain",
+  projectId: "Youre_Firebase_projectId",
+  storageBucket: "Youre_Firebase_storageBucket",
+  messagingSenderId: "Youre_Firebase_messagingSenderId",
+  appId: "Youre_FireBase_appId"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
