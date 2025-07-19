@@ -35,10 +35,54 @@
 
 🎯 Real-Time Price Feed: Live market data integration ensures an authentic experience.
 
-
+---
 
 ## 🌐 Backend (Node.js) Configuration
 **Install dependencies:**
 
 <pre> <code> cd node </code></pre>
 <pre> <code> npm install </code></pre>
+
+---
+
+## 🌐 Frontend (Angular)
+**Go to the Angular frontend folder:**
+
+<pre> <code>cd cripto</code></pre>
+
+**Install frontend dependencies:**
+
+<pre> <code>npm install</code></pre>
+
+**Run the Angular app:**
+
+<pre> <code>ng serve</code></pre>
+App will be available at: <pre> <code>http://localhost:4200</code></pre>
+
+---
+
+## 🔐 Firebase Configuration
+
+**Open node/index.js and configure it like this:**
+<pre><code>
+export const environment = {
+  production: false,
+  firebaseConfig: {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "your-app.firebaseapp.com",
+    projectId: "your-project-id",
+    storageBucket: "your-app.appspot.com",
+    messagingSenderId: "SENDER_ID",
+    appId: "APP_ID"
+  }
+};</pre></code>
+
+---
+
+##💡 Tips
+**Make sure both frontend and backend servers are running simultaneously.**
+
+**You can install Nodemon for auto-reloading backend:**
+
+<pre><code>npm install -g nodemon</code></pre>
+<pre><code>nodemon index.js</code></pre>
