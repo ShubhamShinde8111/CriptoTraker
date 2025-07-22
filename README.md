@@ -42,6 +42,7 @@
 
 <pre> <code> cd node </code></pre>
 <pre> <code> npm install </code></pre>
+<pre> <code> node index.js </code></pre>
 
 ---
 
