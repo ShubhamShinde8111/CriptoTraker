@@ -8,4 +8,10 @@ export const environment = {
         messagingSenderId: "113544627203",
         appId: "1:113544627203:web:43978a165a7ce297963a36"
       }
+
+  export const environment = {
+  production: false,
+  apiUrl: 'https://node-dh3e.onrender.com'
+};
+
 };
