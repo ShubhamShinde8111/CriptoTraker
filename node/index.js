@@ -75,6 +75,9 @@ app.post('/signin', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Node backend is working!');
+});
 // Endpoint to get current market data
 app.get('/crypto', async (req, res) => {
   try {
