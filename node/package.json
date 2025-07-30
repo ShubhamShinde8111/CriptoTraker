@@ -4,8 +4,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "node index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,6 +24,8 @@
     "node": "file:",
     "node-fetch": "^3.3.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
   "description": ""
 }
