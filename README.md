@@ -153,15 +153,16 @@ vercel
 4. **Set Environment Variables in Vercel Dashboard:**
    - Go to your project in Vercel dashboard
    - Navigate to Settings → Environment Variables
-   - Add the following variables:
+   - Add the following variables (use the exact values from your Firebase project):
      ```
-     FIREBASE_API_KEY=your_firebase_api_key
-     FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
-     FIREBASE_PROJECT_ID=your_project_id
-     FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
-     FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-     FIREBASE_APP_ID=your_app_id
+     FIREBASE_API_KEY=AIzaSyB_GeR7z0UC5wMRFsqxyGw7m2-S-iWoARk
+     FIREBASE_AUTH_DOMAIN=criptomatrix-49d91.firebaseapp.com
+     FIREBASE_PROJECT_ID=criptomatrix-49d91
+     FIREBASE_STORAGE_BUCKET=criptomatrix-49d91.appspot.com
+     FIREBASE_MESSAGING_SENDER_ID=113544627203
+     FIREBASE_APP_ID=1:113544627203:web:43978a165a7ce297963a36
      ```
+   - Make sure to set these for all environments (Production, Preview, Development)
 
 5. **Redeploy after adding environment variables:**
 ```bash
@@ -173,6 +174,22 @@ vercel --prod
 2. Vercel will automatically deploy on every push to main branch
 3. Set environment variables in Vercel dashboard
 4. Your app will be available at `https://your-project-name.vercel.app`
+
+### Troubleshooting
+
+**Environment Variable Issues:**
+- If you see "Environment Variable references Secret which does not exist", make sure you've added the environment variables in the Vercel dashboard
+- Go to your project → Settings → Environment Variables and add all the Firebase variables
+- Make sure to set them for all environments (Production, Preview, Development)
+
+**Build Issues:**
+- If the frontend build fails, make sure all dependencies are installed
+- Check that the `vercel-build` script is working: `npm run vercel-build` in the frontend folder
+
+**API Issues:**
+- If API calls fail, check that the backend is properly deployed
+- Verify that environment variables are set correctly in Vercel dashboard
+- Check the Vercel function logs for any errors
 
 ---
 
