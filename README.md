@@ -37,46 +37,93 @@
 
 ---
 
-## 🌐 Backend (Node.js) Configuration
-**Install dependencies:**
+## 🚀 Quick Start
 
-<pre> <code> cd node </code></pre>
-<pre> <code> npm install </code></pre>
-<pre> <code> node index.js </code></pre>
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- Firebase project setup
 
----
+### Installation
 
-## 🌐 Frontend (Angular)
-**Go to the Angular frontend folder:**
+1. **Clone the repository:**
+```bash
+git clone <your-repo-url>
+cd CriptoTraker
+```
 
-<pre> <code>cd cripto</code></pre>
+2. **Install root dependencies:**
+```bash
+npm install
+```
 
-**Install frontend dependencies:**
+3. **Install backend dependencies:**
+```bash
+cd backend
+npm install
+cd ..
+```
 
-<pre> <code>npm install</code></pre>
+4. **Install frontend dependencies:**
+```bash
+cd frontend
+npm install
+cd ..
+```
 
-**Run the Angular app:**
+### Environment Setup
 
-<pre> <code>ng serve</code></pre>
-App will be available at: <pre> <code>http://localhost:4200</code></pre>
+1. **Create environment file:**
+```bash
+# Copy the example environment file
+cp environment.example .env
+```
+
+2. **Configure your Firebase credentials in `.env`:**
+```env
+FIREBASE_API_KEY=your_firebase_api_key_here
+FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+FIREBASE_APP_ID=your_app_id
+```
+
+### Running the Application
+
+**Option 1: Run both servers together**
+```bash
+npm start
+```
+
+**Option 2: Run servers individually**
+
+Backend (Terminal 1):
+```bash
+cd backend
+npm start
+```
+
+Frontend (Terminal 2):
+```bash
+cd frontend
+npm start
+```
+
+### Access Points
+- **Frontend:** http://localhost:4200
+- **Backend API:** http://localhost:3000
 
 ---
 
 ## 🔐 Firebase Configuration
 
-**Open node/index.js and configure it like this:**
-<pre><code>
-export const environment = {
-  production: false,
-  firebaseConfig: {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "your-app.firebaseapp.com",
-    projectId: "your-project-id",
-    storageBucket: "your-app.appspot.com",
-    messagingSenderId: "SENDER_ID",
-    appId: "APP_ID"
-  }
-};</pre></code>
+The project uses environment variables for Firebase configuration. Make sure to:
+
+1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
+2. Enable Authentication and Firestore
+3. Copy your Firebase config to the `.env` file
+4. The backend will automatically use these environment variables
 
 ---
 

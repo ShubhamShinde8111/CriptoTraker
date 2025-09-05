@@ -1,5 +1,5 @@
 {
-  "name": "node",
+  "name": "backend",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
@@ -21,7 +21,7 @@
     "express": "^4.19.2",
     "firebase": "^10.14.0",
     "firebase-admin": "^12.6.0",
-    "node": "file:",
+    "backend": "file:",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
