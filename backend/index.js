@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 const COINGECKO_API_BASE = process.env.COINGECKO_API_BASE || 'https://api.coingecko.com/api/v3';
 
 
-dotenv.config();
+dotenv.config({ path: './.env' });
 
 const app = express();
 const port = process.env.PORT || 3000;

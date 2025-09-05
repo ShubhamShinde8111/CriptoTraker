@@ -65,8 +65,8 @@ function askQuestion(index) {
       'COINGECKO_API_BASE=https://api.coingecko.com/api/v3'
     ].join('\n');
 
-    fs.writeFileSync('.env', envFileContent);
-    console.log('\n✅ Environment file (.env) created successfully!');
+    fs.writeFileSync('backend/.env', envFileContent);
+    console.log('\n✅ Environment file (backend/.env) created successfully!');
     console.log('🔒 Make sure to add .env to your .gitignore file to keep your credentials secure.');
     rl.close();
     return;
@@ -81,8 +81,8 @@ function askQuestion(index) {
 }
 
 // Check if .env already exists
-if (fs.existsSync('.env')) {
-  rl.question('⚠️  .env file already exists. Do you want to overwrite it? (y/N): ', (answer) => {
+if (fs.existsSync('backend/.env')) {
+  rl.question('⚠️  backend/.env file already exists. Do you want to overwrite it? (y/N): ', (answer) => {
     if (answer.toLowerCase() === 'y' || answer.toLowerCase() === 'yes') {
       askQuestion(0);
     } else {

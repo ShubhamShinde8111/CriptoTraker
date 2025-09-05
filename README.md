@@ -76,10 +76,10 @@ cd ..
 1. **Create environment file:**
 ```bash
 # Copy the example environment file
-cp environment.example .env
+cp backend/environment.example backend/.env
 ```
 
-2. **Configure your Firebase credentials in `.env`:**
+2. **Configure your Firebase credentials in `backend/.env`:**
 ```env
 FIREBASE_API_KEY=your_firebase_api_key_here
 FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
@@ -122,7 +122,7 @@ The project uses environment variables for Firebase configuration. Make sure to:
 
 1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
 2. Enable Authentication and Firestore
-3. Copy your Firebase config to the `.env` file
+3. Copy your Firebase config to the `backend/.env` file
 4. The backend will automatically use these environment variables
 
 ---
