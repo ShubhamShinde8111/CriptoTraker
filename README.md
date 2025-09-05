@@ -127,6 +127,55 @@ The project uses environment variables for Firebase configuration. Make sure to:
 
 ---
 
+## 🚀 Deployment to Vercel
+
+### Prerequisites
+- Vercel account (free at [vercel.com](https://vercel.com))
+- GitHub repository with your code
+
+### Deployment Steps
+
+1. **Install Vercel CLI:**
+```bash
+npm install -g vercel
+```
+
+2. **Login to Vercel:**
+```bash
+vercel login
+```
+
+3. **Deploy from project root:**
+```bash
+vercel
+```
+
+4. **Set Environment Variables in Vercel Dashboard:**
+   - Go to your project in Vercel dashboard
+   - Navigate to Settings → Environment Variables
+   - Add the following variables:
+     ```
+     FIREBASE_API_KEY=your_firebase_api_key
+     FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+     FIREBASE_PROJECT_ID=your_project_id
+     FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+     FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+     FIREBASE_APP_ID=your_app_id
+     ```
+
+5. **Redeploy after adding environment variables:**
+```bash
+vercel --prod
+```
+
+### Alternative: Deploy via GitHub Integration
+1. Connect your GitHub repository to Vercel
+2. Vercel will automatically deploy on every push to main branch
+3. Set environment variables in Vercel dashboard
+4. Your app will be available at `https://your-project-name.vercel.app`
+
+---
+
 ##💡 Tips
 **Make sure both frontend and backend servers are running simultaneously.**
 

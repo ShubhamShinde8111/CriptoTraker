@@ -8,5 +8,5 @@ export const environment = {
     messagingSenderId: "113544627203",
     appId: "1:113544627203:web:43978a165a7ce297963a36"
   },
-  apiUrl: 'https://node-dh3e.onrender.com'
+  apiUrl: window.location.origin + '/api'
 };
